@@ -9,78 +9,78 @@ using static UnityEditor.Progress;
 
 public class GerenciadorJogo : MonoBehaviour
 {
-    [Header("Configuração dos Modelos")]
-    public Transform pontoDeSpawn; // Arraste o objeto "Faixa" da hierarquia aqui para pegar a posição
-    public GameObject[] prefabsFaixas; // Arraste seus prefabs aqui na ordem (Branca, Cinza/Branca, etc.)
+    [Header("Configuração Visual")]
+    public Renderer faixaRenderer; // Arraste o objeto da faixa 3D aqui
+    public TextMeshProUGUI textoDica; // Arraste o texto da dica aqui
 
-    private GameObject faixaAtual;
-
-    [Header("Interface")]
-    public TextMeshProUGUI textoDica; // Arraste o seu "Dica Text (TMP)" aqui
-    public GameObject telaVitoria;
+    [Header("Telas")]
     public GameObject telaDerrota;
+    public GameObject telaVitoria;
 
-    private int indexFase = 0;
+    // Classe para organizar os dados de cada faixa
+    [System.Serializable]
+    public class DadosFaixa
+    {
+        public string nome;
+        public Color cor;
+        public string dica;
+    }
 
-    // Dicas para as crianças
-    private string[] dicas = {
-        "A cor do iniciante! (Branca)",
-        "Cor de nuvem com branco! (Cinza/Branca)",
-        "Cor de elefante! (Cinza)",
-        "Cinza com pontinha preta!",
-        "Cor do sol com branco! (Amarela/Branca)"
-        // Continue a lista até a verde...
-    };
+    public List<DadosFaixa> todasAsFaixas; // Preencha no Inspector do Unity
+    private int indiceSorteado;
+    private List<int> indicesRestantes = new List<int>();
 
     void Start()
     {
-        telaVitoria.SetActive(false);
-        telaDerrota.SetActive(false);
-        ProximaFase();
+        ReiniciarJogo();
     }
 
-    // ESSA FUNÇÃO VOCÊ VAI COLOCAR NOS BOTÕES
-    public void TentarGraduar(int botaoID)
+    public void ReiniciarJogo()
     {
-        // Se o número do botão for igual ao index da fase atual, ele acertou
-        if (botaoID == indexFase)
+        telaDerrota.SetActive(false);
+        telaVitoria.SetActive(false);
+
+        // Resetar a lista de índices para garantir aleatoriedade sem repetir
+        indicesRestantes.Clear();
+        for (int i = 0; i < todasAsFaixas.Count; i++)
         {
-            indexFase++;
-            if (indexFase >= prefabsFaixas.Length)
-            {
-                telaVitoria.SetActive(true);
-            }
-            else
-            {
-                ProximaFase();
-            }
+            indicesRestantes.Add(i);
+        }
+
+        SortearProximaFase();
+    }
+
+    void SortearProximaFase()
+    {
+        if (indicesRestantes.Count <= 0)
+        {
+            telaVitoria.SetActive(true);
+            return;
+        }
+
+        // Sorteia um índice da lista de restantes
+        int r = UnityEngine.Random.Range(0, indicesRestantes.Count);
+        indiceSorteado = indicesRestantes[r];
+        indicesRestantes.RemoveAt(r); // Remove para não repetir a mesma cor
+
+        // Atualiza a UI e reseta a cor da faixa para branco (estado neutro)
+        textoDica.text = "Dica: " + todasAsFaixas[indiceSorteado].dica;
+        faixaRenderer.material.color = Color.white;
+    }
+
+    // Função chamada pelos botões
+    public void VerificarResposta(string nomeDoBotao)
+    {
+        if (nomeDoBotao == todasAsFaixas[indiceSorteado].nome)
+        {
+            // Se acertou, pinta a faixa com a cor correta e sorteia a próxima após 1 segundo
+            faixaRenderer.material.color = todasAsFaixas[indiceSorteado].cor;
+            Invoke("SortearProximaFase", 1.2f);
         }
         else
         {
+            // Se errou, Game Over
             telaDerrota.SetActive(true);
         }
-    }
-
-    void ProximaFase()
-    {
-        // Apaga a faixa anterior
-        if (faixaAtual != null) Destroy(faixaAtual);
-
-        // Cria a nova faixa na posição certinha do seu cenário
-        faixaAtual = Instantiate(prefabsFaixas[indexFase], pontoDeSpawn.position, pontoDeSpawn.rotation);
-
-        // Ajusta a escala (vi no seu print que a escala é grande: 52, 32, 32)
-        faixaAtual.transform.localScale = pontoDeSpawn.localScale;
-
-        // Atualiza a dica
-        textoDica.text = dicas[indexFase];
-    }
-
-    public void Restart()
-    {
-        indexFase = 0;
-        telaDerrota.SetActive(false);
-        telaVitoria.SetActive(false);
-        ProximaFase();
     }
 }
