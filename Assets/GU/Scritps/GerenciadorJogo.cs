@@ -1,96 +1,86 @@
+using System;
+using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
+using static UnityEditor.Progress;
 
 public class GerenciadorJogo : MonoBehaviour
 {
-    [Header("Configuração Visual")]
-    [SerializeField] public SpriteRenderer faixaVisual; // O objeto da faixa no centro da tela
-    [SerializeField] public Text textoDica;             // Um componente de texto para as dicas
+    [Header("Configuração dos Modelos")]
+    public Transform pontoDeSpawn; // Arraste o objeto "Faixa" da hierarquia aqui para pegar a posição
+    public GameObject[] prefabsFaixas; // Arraste seus prefabs aqui na ordem (Branca, Cinza/Branca, etc.)
 
-    [Header("Telas de Status")]
-    [SerializeField] private GameObject telaVitoria;
-    [SerializeField] private GameObject telaDerrota;
+    private GameObject faixaAtual;
 
-    // Lista da ordem correta dos nomes dos botões (conforme sua imagem)
-    private string[] ordemInfantil = {
-        "Faixa Branca", "Faixa Cinza Com Branco", "Faixa Cinza", "Faixa Cinza Com Preto",
-        "Faixa Amarela Com Branco", "Faixa Amarela", "Faixa Amarela Com Preto",
-        "Faixa Laranja Com Branco", "Faixa Laranja", "Faixa Laranja Com Preto",
-        "Faixa Verde Com Branco", "Faixa Verde", "Faixa Verde Com Preto"
-    };
+    [Header("Interface")]
+    public TextMeshProUGUI textoDica; // Arraste o seu "Dica Text (TMP)" aqui
+    public GameObject telaVitoria;
+    public GameObject telaDerrota;
 
-    // Dicas correspondentes a cada faixa
+    private int indexFase = 0;
+
+    // Dicas para as crianças
     private string[] dicas = {
-        "Dica: É a cor da paz e de quem está começando hoje!",
-        "Dica: Mistura de branco com a cor das nuvens de chuva!",
-        "Dica: A cor do elefante, sem nenhuma outra mistura.",
-        "Dica: A cor cinza, mas agora chegando perto da faixa amarela!",
-        "Dica: A cor do sol misturada com a cor do começo!",
-        "Dica: A cor do sol brilhante!",
-        "Dica: O sol está ficando forte, quase laranja!",
-        "Dica: Cor de laranja misturada com o branco!",
-        "Dica: A cor da fruta laranja!",
-        "Dica: Laranja forte, quase chegando na cor da floresta!",
-        "Dica: A cor das árvores misturada com branco!",
-        "Dica: A cor das matas e das folhas!",
-        "Dica: O nível máximo das crianças! Verde escuro!"
+        "A cor do iniciante! (Branca)",
+        "Cor de nuvem com branco! (Cinza/Branca)",
+        "Cor de elefante! (Cinza)",
+        "Cinza com pontinha preta!",
+        "Cor do sol com branco! (Amarela/Branca)"
+        // Continue a lista até a verde...
     };
-
-    private int nivelAtual = 0;
 
     void Start()
     {
         telaVitoria.SetActive(false);
         telaDerrota.SetActive(false);
-        AtualizarDica();
+        ProximaFase();
     }
 
-    // Chame esta função nos seus botões do Unity passando o nome da cor
-    public void SelecionarFaixa(string nomeBotao)
+    // ESSA FUNÇÃO VOCÊ VAI COLOCAR NOS BOTÕES
+    public void TentarGraduar(int botaoID)
     {
-        if (nomeBotao == ordemInfantil[nivelAtual])
+        // Se o número do botão for igual ao index da fase atual, ele acertou
+        if (botaoID == indexFase)
         {
-            Acertou();
+            indexFase++;
+            if (indexFase >= prefabsFaixas.Length)
+            {
+                telaVitoria.SetActive(true);
+            }
+            else
+            {
+                ProximaFase();
+            }
         }
         else
         {
-            Errado();
+            telaDerrota.SetActive(true);
         }
     }
 
-    void Acertou()
+    void ProximaFase()
     {
-        // Aqui você pode mudar a cor da faixa visual se desejar
-        // faixaVisual.color = corDoBotao; 
+        // Apaga a faixa anterior
+        if (faixaAtual != null) Destroy(faixaAtual);
 
-        nivelAtual++;
+        // Cria a nova faixa na posição certinha do seu cenário
+        faixaAtual = Instantiate(prefabsFaixas[indexFase], pontoDeSpawn.position, pontoDeSpawn.rotation);
 
-        if (nivelAtual >= ordemInfantil.Length)
-        {
-            telaVitoria.SetActive(true);
-        }
-        else
-        {
-            AtualizarDica();
-        }
+        // Ajusta a escala (vi no seu print que a escala é grande: 52, 32, 32)
+        faixaAtual.transform.localScale = pontoDeSpawn.localScale;
+
+        // Atualiza a dica
+        textoDica.text = dicas[indexFase];
     }
 
-    void Errado()
+    public void Restart()
     {
-        telaDerrota.SetActive(true);
-    }
-
-    void AtualizarDica()
-    {
-        textoDica.text = dicas[nivelAtual];
-    }
-
-    public void ReiniciarJogo()
-    {
-        nivelAtual = 0;
-        telaVitoria.SetActive(false);
+        indexFase = 0;
         telaDerrota.SetActive(false);
-        AtualizarDica();
+        telaVitoria.SetActive(false);
+        ProximaFase();
     }
 }
