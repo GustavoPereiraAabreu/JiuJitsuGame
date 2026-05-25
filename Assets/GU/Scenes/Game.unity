@@ -1297,8 +1297,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -672, y: 433}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -267.0609, y: 433}
+  m_SizeDelta: {x: 1009.878, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &173966882
 MonoBehaviour:
@@ -1495,7 +1495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &213075537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2252,63 +2252,59 @@ MonoBehaviour:
   telaDerrota: {fileID: 732541607}
   telaVitoria: {fileID: 925028667}
   todasAsFaixas:
-  - nome: 
+  - nome: Faixa Branca
+    cor: {r: 1, g: 1, b: 1, a: 0}
+    dica: "\xC9 a cor do teu primeiro dia no tatame, pura como uma folha"
+  - nome: Faixa Cinza Com Branco
+    cor: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 0}
+    dica: "Mistura a cor do come\xE7o com a cor de uma nuvem de chuva clarinha!"
+  - nome: Faixa Cinza
+    cor: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 0}
+    dica: "\xC9 a cor de um elefante forte ou de um lindo golfinho!"
+  - nome: Faixa Cinza Com Preto
+    cor: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 0}
+    dica: A cor da nuvem nublada de tempestade
+  - nome: Faixa Amarela Com Branco
+    cor: {r: 0.9622642, g: 0.8976504, b: 0.41304737, a: 0}
+    dica: "O sol come\xE7ou a nascer no teu tatame e misturou-se com o branco!"
+  - nome: Faixa Amarela
+    cor: {r: 1, g: 0.9253036, b: 0, a: 0}
+    dica: Brilha como o sol do meio-dia! Uma cor cheia de energia.
+  - nome: Faixa Amarela Com Preto
+    cor: {r: 0.8018868, g: 0.66268075, b: 0.04160734, a: 0}
+    dica: "O sol est\xE1 a ficar t\xE3o forte que ganhou uma pontinha escura!"
+  - nome: Faixa Laranja Com Branco
+    cor: {r: 0.9245283, g: 0.6076569, b: 0.30962977, a: 0}
+    dica: Uma cor citrina e docinha misturada com a cor do iniciante.
+  - nome: Faixa Laranja
+    cor: {r: 1, g: 0.4694984, b: 0, a: 0}
+    dica: Tem o nome de uma fruta deliciosa e cheia de vitamina C!
+  - nome: Faixa Laranja Com Preto
+    cor: {r: 0.6603774, g: 0.26623678, b: 0, a: 0}
+    dica: "Cor de ab\xF3bora de Halloween, quase a chegar \xE0 cor da floresta!"
+  - nome: Faixa Verde Com Branco
+    cor: {r: 0.33343717, g: 0.5566038, b: 0.36319274, a: 0}
+    dica: Cor de relva fresca misturada com o teu primeiro dia de treino!
+  - nome: Faixa Verde
+    cor: {r: 0.07809492, g: 0.41509432, b: 0, a: 0}
+    dica: "A cor das \xE1rvores e das grandes florestas!"
+  - nome: Faixa Verde Com Preto
+    cor: {r: 0.09418902, g: 0.23584908, b: 0.0077874744, a: 0}
+    dica: "O n\xEDvel mais alto que uma crian\xE7a pode chegar! Verde bem escuro."
+  - nome: Faixa Azul
+    cor: {r: 0.003070495, g: 0.24055786, b: 0.6509434, a: 0}
+    dica: "A cor do c\xE9u limpo e do oceano profundo. Onde os adultos come\xE7am
+      a s\xE9rio!"
+  - nome: Faixa Roxa
+    cor: {r: 0.35709932, g: 0.026032386, b: 0.6132076, a: 0}
+    dica: "Uma cor m\xE1gica que nasce da mistura do azul com o vermelho!"
+  - nome: Faixa Marrom
+    cor: {r: 0.2735849, g: 0.16881002, b: 0.07097722, a: 0}
+    dica: "A cor da terra firme e das ra\xEDzes de uma \xE1rvore muito forte. Quase
+      mestre!"
+  - nome: Faixa Preta
     cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
-  - nome: 
-    cor: {r: 0, g: 0, b: 0, a: 0}
-    dica: 
+    dica: "A cor da noite e o s\xEDmbolo m\xE1ximo de dedica\xE7\xE3o no Jiu-Jitsu!"
 --- !u!1 &344703412
 GameObject:
   m_ObjectHideFlags: 0
@@ -2529,7 +2525,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 362175892}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Branca
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &362175892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2598,7 +2606,6 @@ RectTransform:
   m_LocalScale: {x: 0.32449937, y: 0.6978544, z: 0.4564592}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1487684594}
   - {fileID: 1953061551}
   - {fileID: 1796336314}
   - {fileID: 778272712}
@@ -3200,6 +3207,139 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 5385126349133727734, guid: 898b05446c813ca479d25dd21d3d408b, type: 3}
   m_PrefabInstance: {fileID: 479520783}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &524493347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 524493348}
+  - component: {fileID: 524493351}
+  - component: {fileID: 524493350}
+  - component: {fileID: 524493349}
+  m_Layer: 5
+  m_Name: Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &524493348
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524493347}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 94}
+  m_LocalScale: {x: 2.3259, y: 2.3259, z: 2.3259}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 691830677}
+  m_Father: {fileID: 732541608}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -111}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &524493349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524493347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 524493350}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1698775168}
+        m_TargetAssemblyTypeName: RestartGame, Assembly-CSharp
+        m_MethodName: ResetGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &524493350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524493347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &524493351
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524493347}
+  m_CullTransparentMesh: 1
 --- !u!1 &527355253
 GameObject:
   m_ObjectHideFlags: 0
@@ -4759,6 +4899,142 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689944204}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &691830676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 691830677}
+  - component: {fileID: 691830679}
+  - component: {fileID: 691830678}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &691830677
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691830676}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 524493348}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &691830678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691830676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Tentar de novo
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &691830679
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691830676}
+  m_CullTransparentMesh: 1
 --- !u!1 &732541607
 GameObject:
   m_ObjectHideFlags: 0
@@ -4790,6 +5066,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1097466782}
+  - {fileID: 524493348}
   - {fileID: 1678407847}
   m_Father: {fileID: 1384311092}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4811,7 +5088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9528302, g: 0, b: 0, a: 0.5019608}
+  m_Color: {r: 0.9528302, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5057,7 +5334,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 778272714}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Marrom
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &778272714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5758,7 +6047,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 800035664}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Amarela
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &800035664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5990,7 +6291,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 819907555}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Verde Com Branco
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &819907555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7204,7 +7517,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 983767883}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Amarela com Preto
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &983767883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7242,144 +7567,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983767880}
-  m_CullTransparentMesh: 1
---- !u!1 &1015816955
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1015816956}
-  - component: {fileID: 1015816958}
-  - component: {fileID: 1015816957}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1015816956
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1015816955}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1487684594}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1015816957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1015816955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Faixa Branca
-
-'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1015816958
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1015816955}
   m_CullTransparentMesh: 1
 --- !u!1 &1016229479
 GameObject:
@@ -7574,7 +7761,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1018246602}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Cinza
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1018246602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8272,7 +8471,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -156}
+  m_AnchoredPosition: {x: 0, y: -212}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1097466783
@@ -8528,7 +8727,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1181465681}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Laranja Com Branco
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1181465681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8787,7 +8998,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1198329238}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Cinza Com Preto
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1198329238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9234,7 +9457,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1324251044}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Amarela Com Branco
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1324251044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9561,6 +9796,7 @@ RectTransform:
   - {fileID: 925028668}
   - {fileID: 732541608}
   - {fileID: 1967443831}
+  - {fileID: 1698775167}
   - {fileID: 1390282751}
   - {fileID: 336421430}
   m_Father: {fileID: 0}
@@ -10473,127 +10709,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482756693}
   m_CullTransparentMesh: 1
---- !u!1 &1487684593
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1487684594}
-  - component: {fileID: 1487684597}
-  - component: {fileID: 1487684596}
-  - component: {fileID: 1487684595}
-  m_Layer: 5
-  m_Name: Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1487684594
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487684593}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0006931444}
-  m_LocalScale: {x: 1.6122017, y: 1.6122017, z: 1.6122016}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1015816956}
-  m_Father: {fileID: 367063387}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -173.98, y: 122.75}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1487684595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487684593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1487684596}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1487684596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487684593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1487684597
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487684593}
-  m_CullTransparentMesh: 1
 --- !u!1 &1507020621
 GameObject:
   m_ObjectHideFlags: 0
@@ -10676,7 +10791,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1507020624}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Cinza Com Branco
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1507020624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11488,7 +11615,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1591026962}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Verde
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1591026962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11686,7 +11825,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1625363165}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Laranja Com Preto
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1625363165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12154,8 +12305,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Que pena, Voc\xEA perdeu :("
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12313,7 +12464,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1691775234}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Laranja
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1691775234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12429,6 +12592,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d2ede5f970771b84ca665821d5894ac6, type: 3}
   m_PrefabInstance: {fileID: 1695563319}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1698775166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1698775167}
+  - component: {fileID: 1698775168}
+  m_Layer: 5
+  m_Name: resetGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1698775167
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698775166}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1384311092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -795.99994}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1698775168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698775166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1f1d4fd2fb1d846916c98510ebdc46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RestartGame
 --- !u!1 &1712472945
 GameObject:
   m_ObjectHideFlags: 0
@@ -13313,7 +13524,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1796336316}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Roxa
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1796336316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14769,7 +14992,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 176.38, y: 118.81}
+  m_AnchoredPosition: {x: -16, y: 118.81}
   m_SizeDelta: {x: 160, y: 52.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1953061552
@@ -14815,7 +15038,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1953061553}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Azul
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1953061553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15124,7 +15359,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1961573571}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Preta
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1961573571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15293,7 +15540,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1982075170}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336421431}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VerificarResposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Faixa Verde Com Preto
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1982075170
 MonoBehaviour:
   m_ObjectHideFlags: 0
