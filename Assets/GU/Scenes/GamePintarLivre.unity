@@ -279,14 +279,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1668237402}
         m_TargetAssemblyTypeName: ModoLivre, Assembly-CSharp
-        m_MethodName: PintarComCor
+        m_MethodName: SelecionarCorDaPaleta
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Faixa
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &38643785
@@ -2076,7 +2076,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 38643783}
-  - {fileID: 1723656082}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2402,7 +2401,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5796904583612215754, guid: 898b05446c813ca479d25dd21d3d408b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 641344594}
   m_SourcePrefab: {fileID: 100100000, guid: 898b05446c813ca479d25dd21d3d408b, type: 3}
 --- !u!1 &527355253
 GameObject:
@@ -2933,6 +2935,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d2ede5f970771b84ca665821d5894ac6, type: 3}
   m_PrefabInstance: {fileID: 626833637}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &641344592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5796904583612215754, guid: 898b05446c813ca479d25dd21d3d408b, type: 3}
+  m_PrefabInstance: {fileID: 479520783}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &641344594
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641344592}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &652145459
 GameObject:
   m_ObjectHideFlags: 0
@@ -5524,11 +5553,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d2ede5f970771b84ca665821d5894ac6, type: 3}
   m_PrefabInstance: {fileID: 1151687466}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &1183721068 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5385126349133727734, guid: 898b05446c813ca479d25dd21d3d408b, type: 3}
-  m_PrefabInstance: {fileID: 479520783}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1201101486
 GameObject:
   m_ObjectHideFlags: 0
@@ -7619,9 +7643,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 022741f1d7094a34cae52b3266519bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ModoLivre
-  kimonoRenderer: {fileID: 0}
-  faixaRenderer: {fileID: 1183721068}
-  painelModoLivreUI: {fileID: 0}
 --- !u!4 &1668237403
 Transform:
   m_ObjectHideFlags: 0
@@ -7825,81 +7846,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712472945}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1723656081
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1723656082}
-  - component: {fileID: 1723656084}
-  - component: {fileID: 1723656083}
-  m_Layer: 5
-  m_Name: Panel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1723656082
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723656081}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.37246, y: 0.5371618, z: 0.37246}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 469304791}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -492, y: -204.6}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1723656083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723656081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1723656084
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723656081}
-  m_CullTransparentMesh: 1
 --- !u!1 &1726920599
 GameObject:
   m_ObjectHideFlags: 0

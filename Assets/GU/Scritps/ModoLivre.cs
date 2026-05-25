@@ -2,51 +2,49 @@ using UnityEngine;
 
 public class ModoLivre : MonoBehaviour
 {
-    [Header("Referências dos Modelos 3D")]
-    [SerializeField] private Renderer kimonoRenderer; // Arraste o MeshRenderer do Kimono aqui
-    [SerializeField] private Renderer faixaRenderer;  // Arraste o MeshRenderer da Faixa aqui
+    [Header("Cor Selecionada Atualmente")]
+    private Color corEscolhida = Color.white; // Começa com branco por padrão
 
-    // Enumerador para sabermos o que a criança selecionou para pintar
-    private enum AlvoPintura { Kimono, Faixa }
-    private AlvoPintura alvoAtual = AlvoPintura.Faixa; // Começa na faixa por padrão
-
-    [Header("Painéis de UI (Opcional)")]
-    public GameObject painelModoLivreUI; // O painel que segura os botões deste modo
-
-    // 1. FUNÇÕES PARA OS BOTÕES DE SELEÇÃO (O que pintar?)
-    public void EscolherKimono()
+    void Update()
     {
-        alvoAtual = AlvoPintura.Kimono;
-        Debug.Log("Alvo alterado: Agora pintando o Kimono!");
-    }
-
-    public void EscolherFaixa()
-    {
-        alvoAtual = AlvoPintura.Faixa;
-        Debug.Log("Alvo alterado: Agora pintando a Faixa!");
-    }
-
-    // 2. FUNÇÃO PARA OS BOTÕES DE CORES
-    // Você vai passar a cor usando o formato Hexadecimal (ex: #FF0000) pelo próprio botão
-    public void AplicarCor(string codigoHex)
-    {
-        Color corResultante;
-
-        // Converte o texto Hexadecimal em uma cor real do Unity
-        if (ColorUtility.TryParseHtmlString(codigoHex, out corResultante))
+        // Detecta o clique do mouse (ou toque na tela do celular)
+        if (Input.GetMouseButtonDown(0))
         {
-            if (alvoAtual == AlvoPintura.Kimono && kimonoRenderer != null)
-            {
-                kimonoRenderer.material.color = corResultante;
-            }
-            else if (alvoAtual == AlvoPintura.Faixa && faixaRenderer != null)
-            {
-                faixaRenderer.material.color = corResultante;
-            }
+            ColorirElemento3D();
         }
-        else
+    }
+
+    // 1. FUNÇÃO PARA OS BOTÕES DA PALETA DE CORES
+    // Coloque essa função nos botões coloridos da direita passando o código Hex (ex: #FF0000)
+    public void SelecionarCorDaPaleta(string codigoHex)
+    {
+        Color novaCor;
+        if (ColorUtility.TryParseHtmlString(codigoHex, out novaCor))
         {
-            Debug.LogError("Código Hexadecimal inválido enviado pelo botão: " + codigoHex);
+            corEscolhida = novaCor;
+            Debug.Log("Cor selecionada na paleta: " + codigoHex);
+        }
+    }
+
+    // 2. LOGICA DE PINTAR CLICANDO DIRETAMENTE NO OBJETO
+    void ColorirElemento3D()
+    {
+        // Transforma a posição do clique do mouse em um raio 3D a partir da câmera
+        Ray raio = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        // Se o raio atingir qualquer objeto 3D que tenha um Collider
+        if (Physics.Raycast(raio, out hit))
+        {
+            // Pega o componente Renderer do objeto clicado
+            Renderer rendererObjeto = hit.collider.GetComponent<Renderer>();
+
+            if (rendererObjeto != null)
+            {
+                // Pinta o material do objeto que o jogador acabou de clicar!
+                rendererObjeto.material.color = corEscolhida;
+                Debug.Log("Pintou o objeto: " + hit.collider.name);
+            }
         }
     }
 }
