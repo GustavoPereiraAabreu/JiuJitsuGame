@@ -1,15 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class QuitGame : MonoBehaviour
+public class PintarLivrementeTrocar : MonoBehaviour
 {
-    // Função chamada quando o botão é clicado
-    public void QuitTheGame()
+    public void StartNewMode()
     {
         // Carrega a cena do jogo (certifique-se de que a cena "Game" está adicionada nas configurações do build)
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("GamePintarLivre");
         Time.timeScale = 1f; // Garante que o tempo volte ao normal caso tenha sido pausado
     }
+
 }
-
-
