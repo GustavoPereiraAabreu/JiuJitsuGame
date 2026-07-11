@@ -13,7 +13,6 @@ public class PintarFaixaDesign : MonoBehaviour
         if (faixaRenderer != null && seletorDeCor != null)
         {
             faixaRenderer.material.color = seletorDeCor.color;
-            Debug.Log("Faixa pintada com a cor do seu design!");
         }
     }
 }
